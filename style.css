@@ -23,6 +23,9 @@ header{
 .header-img{
     text-align: center;
 }
+.header-img-mob{
+    display: none;
+}
 #header-abt-img{
     width: 200px;
     border: solid rgb(36, 248, 36) 10px;
@@ -94,8 +97,14 @@ section div h1{
     display: none;
 }
 #de-btn{
+    display: flex;
+    flex-direction: column;
     margin: auto;
     text-align: center;
+}
+#de-btn a{
+    text-decoration: none;
+    color: black;
 }
 #de-btn a button{
     padding: 15px 30px;
@@ -110,8 +119,14 @@ section div h1{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .header-abt, .header-img{
-        /* width: 100%; */
+    .header-abt{
+        text-align: center;
+    }    
+    .header-img{
+        display: none;
+    }
+    .header-img-mob{
+        display: block;
         text-align: center;
     }
     .header-abt p{
