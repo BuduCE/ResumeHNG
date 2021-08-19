@@ -84,7 +84,7 @@ section div h1{
     margin-left: -40px;
 }
 #interest-list li{
-    border: solid white 1px;
+    border: solid black 1px;
     border-radius: 5px;
     padding: 10px;
     width: fit-content;
