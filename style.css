@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 body{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 header{
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-}
-.header-abt{
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
 }
 .header-abt h3{
     margin-top: -30px;
@@ -17,17 +18,16 @@ header{
     width: 70%;
     margin-top: -15px;
     font-size: 20px;
+    line-height: 1.8;
 }
 .header-img{
-    width: 30%;
+    text-align: center;
 }
 #header-abt-img{
-    width: 50px;
+    width: 200px;
     border: solid rgb(36, 248, 36) 10px;
-    border-radius: 50%;
-    height: 25vh;
-    width: 40%;
-    margin: auto;
+    border-radius: 100%;
+    height: 200px;
 }
 .header-contact ul{
     list-style: none;
@@ -36,18 +36,26 @@ header{
 .header-contact ul li{
     font-size: 25px;
     margin-bottom: 10px;
-    vertical-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-contact ul li span{
+    margin-left: 10px;
 }
 .header-contact ul a{
     text-decoration: none;
+    color: black;
 }
-
 section{
     display: flex;
     padding: 30px;
 }
 section div{
     width: 50%;
+}
+section div h1{
+    font-size: 2em;
 }
 .left h3{
     margin-top: -35px;
@@ -65,8 +73,8 @@ section div{
 #skill-list li{
     background-color: rgb(196, 192, 192);
     border-radius: 5px;
-    padding: 3px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
     width:fit-content;
 }
 #interest-list{
@@ -75,7 +83,7 @@ section div{
 #interest-list li{
     border: solid white 1px;
     border-radius: 5px;
-    padding: 3px;
+    padding: 10px;
     width: fit-content;
     margin-bottom: 5px;
 }
@@ -97,19 +105,24 @@ section div{
 
 /* Responsiveness */
 
-@media(max-width:500px){
+@media(max-width:800px){
     header{
-        display: flex;
-        flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .header-abt, .header-img{
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
     }
     .header-abt p{
-        width: 100%;
+        /* width: 100%; */
         margin-top: -15px;
         font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    .header-contact{
+        display: none;
     }
     section{
         flex-direction: column;
@@ -122,5 +135,20 @@ section div{
     }
     #clear-not{
         display: block;
+    }
+    #clear-not ul li{
+        font-size: 25px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #clear-not ul li span{
+        color: black;
+        margin-right: 10px;
+    }
+    #clear-not ul a{
+        color: black;
+        text-decoration: none;
     }
 }
