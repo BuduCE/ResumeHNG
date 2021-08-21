@@ -152,11 +152,12 @@ section div h1{
         display: block;
     }
     #clear-not ul li{
-        font-size: 12px;
+        font-size: 20px;
         margin-bottom: 10px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        text
+        /* justify-content: flex-start; */
     }
     #clear-not ul li span{
         color: black;

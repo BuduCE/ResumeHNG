@@ -37,7 +37,7 @@ header{
     text-align: right;
 }
 .header-contact ul li{
-    font-size: 25px;
+    font-size: 125px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -152,7 +152,7 @@ section div h1{
         display: block;
     }
     #clear-not ul li{
-        font-size: 12px;
+        font-size: 20px;
         margin-bottom: 10px;
         display: flex;
         align-items: center;
